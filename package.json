@@ -1,0 +1,42 @@
+{
+  "name": "vscode-cheatsheet-mac",
+  "displayName": "VS Code Cheat Sheet for Mac",
+  "description": "VS Code Cheat Sheet for Mac",
+  "version": "0.0.1",
+  "publisher": "CharlieFarnell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/listeningGlass/vscode-cheatsheet-mac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/listeningGlass/vscode-cheatsheet-mac/issues"
+  },
+  "homepage": "https://github.com/listeningGlass/vscode-cheatsheet-mac#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "vscode-cheatsheet-mac.showCheatSheet",
+      "title": "Show VS Code Cheat Sheet for Mac"
+    }],
+    "keybindings": [{
+      "command": "vscode-cheatsheet-mac.showCheatSheet",
+      "key": "cmd+k cmd+h",
+      "mac": "cmd+k cmd+h"
+    }]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "16.x",
+    "eslint": "^8.47.0",
+    "vsce": "^2.15.0"
+  }
+}
